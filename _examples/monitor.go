@@ -17,6 +17,7 @@ func main() {
 
 	var rules = []string{
 		"type='signal',member='Notify',path='/org/freedesktop/Notifications',interface='org.freedesktop.Notifications'",
+		"type='signal',member='Notify',path='/com/github/guelfey/Demo',interface='com.github.guelfey.Demo'",
 		"type='method_call',member='Notify',path='/org/freedesktop/Notifications',interface='org.freedesktop.Notifications'",
 		"type='method_return',member='Notify',path='/org/freedesktop/Notifications',interface='org.freedesktop.Notifications'",
 		"type='error',member='Notify',path='/org/freedesktop/Notifications',interface='org.freedesktop.Notifications'",

@@ -15,7 +15,8 @@ func main() {
 	}
 	defer conn.Close()
 
-	node, err := introspect.Call(conn.Object("org.freedesktop.DBus", "/org/freedesktop/DBus"))
+	//node, err := introspect.Call(conn.Object("org.freedesktop.DBus", "/org/freedesktop/DBus"))
+	node, err := introspect.Call(conn.Object("com.github.guelfey.Demo", "/com/github/guelfey/Demo"))
 	if err != nil {
 		panic(err)
 	}
